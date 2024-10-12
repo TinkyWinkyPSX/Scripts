@@ -1,5 +1,5 @@
 local player = game.Players.LocalPlayer
 for i = 1, 20000 do
-    player.Character.RemoteEvent:FireServer("Poison", {Duration = 80, TotalDamage = 0.0001})
-    player.Character.RemoteEvent:FireServer("Bleed", {Duration = 80, TotalDamage = 0.0001})
+    player.Character.RemoteEvent:FireServer("Poison", {Duration = time, TotalDamage = 0.0001})
+    player.Character.RemoteEvent:FireServer("Bleed", {Duration = time, TotalDamage = 0.0001})
 end
