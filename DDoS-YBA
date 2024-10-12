@@ -15,6 +15,7 @@ local Crasher = Window:MakeTab({
 Crasher:AddLabel("TURN OFF DAMAGE INDICATOR IN YBA SETTINGS")
 Crasher:AddLabel("CRASH/LAG ONLY WORK NEAR PEOPLE")
 Crasher:AddLabel("LAG WORKS FOR 30 SECONDS YOU CAN SPAM IT")
+Crasher:AddLabel("DONT ATTACK OR COLLECT ITEMS WHILE CRASH")
 Crasher:AddLabel("Credits: TurboX  Version: 1.0")
 Crasher:AddButton({
 	Name = "Press To Lag",
