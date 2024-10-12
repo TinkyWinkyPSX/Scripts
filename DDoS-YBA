@@ -1,6 +1,5 @@
 local player = game.Players.LocalPlayer
-local time = _getgenv().time
-for i = 1, 20000 do
+for i = 1, lagcount do
     player.Character.RemoteEvent:FireServer("Poison", {Duration = time, TotalDamage = 0.0001})
     player.Character.RemoteEvent:FireServer("Bleed", {Duration = time, TotalDamage = 0.0001})
 end
