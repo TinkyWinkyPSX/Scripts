@@ -1,6 +1,4 @@
 local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-local torso = character:WaitForChild("Torso")
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 OrionLib:MakeNotification({
 	Name = "YBA Lagger",
@@ -31,12 +29,10 @@ Crasher:AddButton({
 Crasher:AddButton({
 	Name = "Press To Crash",
 	Callback = function()
-		torso.Anchored = true
       		for i = 1, 30000 do
     		player.Character.RemoteEvent:FireServer("Poison", {Duration = 1, TotalDamage = 0.0001})
     		player.Character.RemoteEvent:FireServer("Bleed", {Duration = 1, TotalDamage = 0.0001})
 		end
-		torso.Anchored = false
   	end    
 })
 Crasher:AddButton({
