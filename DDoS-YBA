@@ -6,7 +6,7 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 10
 })
-local Window = OrionLib:MakeWindow({Name = "YBA Lagger 1.0V", HidePremium = false, SaveConfig = true, ConfigFolder = "Crasher", IntroText = "TurboX"})
+local Window = OrionLib:MakeWindow({Name = "Fucxk YBA | BETA", HidePremium = false, SaveConfig = true, ConfigFolder = "Yba_CONFIG", IntroText = "TurboX"})
 local Crasher = Window:MakeTab({
 	Name = "BETA CRASHER",
 	Icon = "rbxassetid://4483345998",
@@ -16,7 +16,7 @@ Crasher:AddLabel("TURN OFF DAMAGE INDICATOR IN YBA SETTINGS")
 Crasher:AddLabel("CRASH/LAG ONLY WORK NEAR PEOPLE")
 Crasher:AddLabel("LAG WORKS FOR 30 SECONDS YOU CAN SPAM IT")
 Crasher:AddLabel("DONT ATTACK OR COLLECT ITEMS WHILE CRASH")
-Crasher:AddLabel("Credits: TurboX  Version: 1.0")
+Crasher:AddLabel("Credits: TurboX  Version: BETA")
 Crasher:AddButton({
 	Name = "Press To Lag",
 	Callback = function()
