@@ -6,7 +6,7 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://86047967228159",
 	Time = 10
 })
-local Window = OrionLib:MakeWindow({Name = "XFuck YBA | BETA", HidePremium = false, SaveConfig = true, ConfigFolder = "Yba_CONFIG", IntroText = "TurboX", IntroIcon = "rbxassetid://86047967228159"})
+local Window = OrionLib:MakeWindow({Name = "XFuck YBA | BETA", HidePremium = false, SaveConfig = true, ConfigFolder = "Yba_CONFIG", IntroText = "XFuck", IntroIcon = "rbxassetid://86047967228159"})
 local Crasher = Window:MakeTab({
 	Name = "Crasher(Beta)",
 	Icon = "rbxassetid://86047967228159",
