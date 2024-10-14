@@ -8,7 +8,7 @@ OrionLib:MakeNotification({
 })
 local Window = OrionLib:MakeWindow({Name = "Fucxk YBA | BETA", HidePremium = false, SaveConfig = true, ConfigFolder = "Yba_CONFIG", IntroText = "TurboX"})
 local Crasher = Window:MakeTab({
-	Name = "BETA CRASHER",
+	Name = "Crasher(Beta)",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
