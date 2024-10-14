@@ -3,13 +3,13 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 OrionLib:MakeNotification({
 	Name = "Let's dance!",
 	Content = "Credits: TurboX",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://86047967228159",
 	Time = 10
 })
-local Window = OrionLib:MakeWindow({Name = "XFuck YBA | BETA", HidePremium = false, SaveConfig = true, ConfigFolder = "Yba_CONFIG", IntroText = "TurboX"})
+local Window = OrionLib:MakeWindow({Name = "XFuck YBA | BETA", HidePremium = false, SaveConfig = true, ConfigFolder = "Yba_CONFIG", IntroText = "TurboX", IntroIcon = "rbxassetid://86047967228159"})
 local Crasher = Window:MakeTab({
 	Name = "Crasher(Beta)",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://86047967228159",
 	PremiumOnly = false
 })
 Crasher:AddLabel("TURN OFF DAMAGE INDICATOR IN YBA SETTINGS")
