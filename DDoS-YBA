@@ -1,12 +1,12 @@
 local player = game.Players.LocalPlayer
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 OrionLib:MakeNotification({
-	Name = "YBA Lagger",
+	Name = "Let's dance!",
 	Content = "Credits: TurboX",
 	Image = "rbxassetid://4483345998",
 	Time = 10
 })
-local Window = OrionLib:MakeWindow({Name = "Fucxk YBA | BETA", HidePremium = false, SaveConfig = true, ConfigFolder = "Yba_CONFIG", IntroText = "TurboX"})
+local Window = OrionLib:MakeWindow({Name = "XFuck YBA | BETA", HidePremium = false, SaveConfig = true, ConfigFolder = "Yba_CONFIG", IntroText = "TurboX"})
 local Crasher = Window:MakeTab({
 	Name = "Crasher(Beta)",
 	Icon = "rbxassetid://4483345998",
