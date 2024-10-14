@@ -6,9 +6,9 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 10
 })
-local Window = OrionLib:MakeWindow({Name = "YBA Lagger", HidePremium = false, SaveConfig = true, ConfigFolder = "Crasher", IntroText = "TurboX"})
+local Window = OrionLib:MakeWindow({Name = "YBA Lagger 1.0V", HidePremium = false, SaveConfig = true, ConfigFolder = "Crasher", IntroText = "TurboX"})
 local Crasher = Window:MakeTab({
-	Name = "Lagger",
+	Name = "BETA CRASHER",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -41,4 +41,10 @@ Crasher:AddButton({
       		OrionLib:Destroy()
   	end    
 })
+local LP = Window:MakeTab({
+	Name = "Local Player",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+LP:AddLabel("Soon...")
 OrionLib:Init()
